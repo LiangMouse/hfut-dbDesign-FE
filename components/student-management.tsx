@@ -34,9 +34,6 @@ export default function StudentManagement() {
   const [searchTerm, setSearchTerm] = useState("")
   const [selectedClass, setSelectedClass] = useState<string>("all") // Updated default value to 'all'
   const [isAddDialogOpen, setIsAddDialogOpen] = useState(false)
-  const [isEditDialogOpen, setIsEditDialogOpen] = useState(false)
-  const [isViewDialogOpen, setIsViewDialogOpen] = useState(false)
-  const [currentStudent, setCurrentStudent] = useState<Student | null>(null)
   const [formData, setFormData] = useState<Partial<Student>>({})
 
   const filteredStudents = students.filter((student) => {
